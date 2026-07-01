@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Abdullah</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="brand">Abdullah<span>Computer Science Student</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">Academic Planner</p>
+      <h1>Track coursework, add tasks, mark them done</h1>
+      <p>A small task manager for assignments and study sessions.
+        Add a task, set a priority and due date, check it off, or remove it.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="planner-shell">
+        <form class="planner-toolbar" id="taskForm">
+          <input type="text" id="taskInput" placeholder="e.g. Submit COS 102 lab report" aria-label="Task description"
+            required>
+          <select id="taskPriority" aria-label="Priority">
+            <option value="normal">Normal</option>
+            <option value="high">High priority</option>
+          </select>
+          <input type="date" id="taskDate" aria-label="Due date">
+          <button type="submit" class="btn btn-solid">Add Task</button>
+        </form>
+
+        <div class="planner-stats">
+          <div class="stat-card">
+            <span class="stat-label">Total</span>
+            <strong id="statTotal">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Pending</span>
+            <strong id="statPending">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Completed</span>
+            <strong id="statDone">0</strong>
+          </div>
+        </div>
+
+        <div id="task-list">
+          <p class="empty-state" id="emptyState">No tasks yet: add your first one above</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p class="footer-brand">Abdullah</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Abdullah. </span>
+      <span>Miva Open University</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+
+</html>
