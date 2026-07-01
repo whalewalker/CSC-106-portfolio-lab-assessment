@@ -38,45 +38,43 @@
   </section>
 
   <section class="section">
-    <div class="container split">
-      <div>
-        <form id="contactForm" novalidate>
-          <div class="form-grid">
-            <div class="field">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Jane Doe">
-              <span class="field-error" id="nameError">Please enter your name</span>
-            </div>
-
-            <div class="field">
-              <label for="email">Email address</label>
-              <input type="text" id="email" name="email" autocomplete="email" placeholder="e.g. jane@example.edu.ng">
-              <span class="field-error" id="emailError">Please enter a valid email address</span>
-            </div>
-
-            <div class="field">
-              <label for="phone">Phone number</label>
-              <input type="text" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 08012345678">
-              <span class="field-error" id="phoneError">Phone number must contain digits only</span>
-            </div>
-
-            <div class="field">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="e.g. Inquiry about programming lab">
-              <span class="field-error" id="subjectError">Please enter a subject</span>
-            </div>
-
-            <div class="field full">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="6" placeholder="Write your message here..."></textarea>
-              <span class="field-error" id="messageError">Please enter a message</span>
-            </div>
+    <div class="container" style="max-width: 640px;">
+      <form id="contactForm" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Jane Doe">
+            <span class="field-error" id="nameError">Please enter your name</span>
           </div>
 
-          <button type="submit" class="btn btn-solid mt-lg">Send Message</button>
-          <div class="form-status" id="formStatus"></div>
-        </form>
-      </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" autocomplete="email" placeholder="e.g. jane@example.edu.ng">
+            <span class="field-error" id="emailError">Please enter a valid email address</span>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="text" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 08012345678">
+            <span class="field-error" id="phoneError">Phone number must contain digits only</span>
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="e.g. Inquiry about programming lab">
+            <span class="field-error" id="subjectError">Please enter a subject</span>
+          </div>
+
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..."></textarea>
+            <span class="field-error" id="messageError">Please enter a message</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-solid mt-lg">Send Message</button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
     </div>
   </section>
 

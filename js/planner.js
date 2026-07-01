@@ -94,6 +94,9 @@ function renderTasks() {
       text.className = "task-text";
       text.textContent = task.text;
 
+      const meta = document.createElement("div");
+      meta.className = "task-meta";
+
       const priority = document.createElement("span");
       priority.className = "task-priority" + (task.priority === "high" ? " high" : "");
       priority.textContent = task.priority === "high" ? "High" : "Normal";
@@ -101,6 +104,9 @@ function renderTasks() {
       const due = document.createElement("span");
       due.className = "task-due";
       due.textContent = formatDate(task.dueDate);
+
+      meta.appendChild(priority);
+      meta.appendChild(due);
 
       const deleteBtn = document.createElement("button");
       deleteBtn.className = "task-delete";
@@ -113,8 +119,7 @@ function renderTasks() {
       row.appendChild(checkbox);
       row.appendChild(taskId);
       row.appendChild(text);
-      row.appendChild(priority);
-      row.appendChild(due);
+      row.appendChild(meta);
       row.appendChild(deleteBtn);
 
       taskListEl.appendChild(row);
