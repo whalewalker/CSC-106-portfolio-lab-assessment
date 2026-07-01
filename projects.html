@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Abdullah</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="index.html" class="brand">Abdullah<span>Computer Science Student</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-intro">
+    <div class="container">
+      <p class="eyebrow">Projects</p>
+      <h1>Work I've built so far</h1>
+      <p>Small, complete projects from my coursework and self-study.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+
+        <article class="card">
+          <div class="card-media"><img src="images/project-triangle.png"
+              alt="Terminal output of the right-angled triangle checker program"></div>
+          <div class="card-body">
+            <p class="card-tag">COS 102 · C Programming</p>
+            <h3>Right-Angled Triangle Checker</h3>
+            <p>A command-line C program that takes three side lengths and determines whether they form a right-angled
+              triangle, applying the Pythagorean theorem to the input.</p>
+            <a href="https://github.com/" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="images/project-palindrome.png"
+              alt="Terminal output of the palindrome number checker program"></div>
+          <div class="card-body">
+            <p class="card-tag">COS 102 · C Programming</p>
+            <h3>Palindrome Number Checker</h3>
+            <p>A C program that reverses a given integer and compares it against the original to check whether the
+              number reads the same forwards and backwards.</p>
+            <a href="https://github.com/" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media"><img src="images/portfolio.png"
+              alt="Screenshot of this student portfolio website"></div>
+          <div class="card-body">
+            <p class="card-tag">CSC 106 · Web Technologies</p>
+            <h3>Student Portfolio Website</h3>
+            <p>A responsive, multi-page portfolio built with semantic HTML, hand-written CSS, and vanilla
+              JavaScript, including a working task planner.</p>
+            <a href="https://github.com/" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="media-block">
+        <video controls preload="metadata" poster="images/portfolio.png">
+          <source src="images/demo-academic-planner.mov" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+        <p class="media-caption">Demo: walking through the Academic Planner page </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p class="footer-brand">Abdullah</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Abdullah. </span>
+      <span>Miva Open University</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
